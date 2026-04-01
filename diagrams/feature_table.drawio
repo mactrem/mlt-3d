@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Seite-1" id="pu4_1PZkzSoIlpf_X2GT">
+    <mxGraphModel dx="1426" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="IGcmq00_zU-12ltwo_KF-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;glass=0;" value="Id" vertex="1">
+          <mxGeometry height="60" width="80" x="50" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;glass=0;" value="Geometry" vertex="1">
+          <mxGeometry height="60" width="480" x="130" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;glass=0;" value="Geometry-Scoped Attributes" vertex="1">
+          <mxGeometry height="60" width="320" x="780" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Width" vertex="1">
+          <mxGeometry height="60" width="160" x="780" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="NumLanes" vertex="1">
+          <mxGeometry height="60" width="160" x="940" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="data" vertex="1">
+          <mxGeometry height="60" width="80" x="50" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Type&lt;div&gt;(byte)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="70" x="130" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="NumVertices&lt;div&gt;(int32)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="200" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="VertexBuffer Streams" vertex="1">
+          <mxGeometry height="60" width="330" x="280" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Toplogy Streams" vertex="1">
+          <mxGeometry height="60" width="150" x="130" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="UV or U?&lt;div&gt;(vec2&amp;lt;u16&amp;gt;&lt;/div&gt;&lt;div&gt;or vec&amp;lt;u16&amp;gt;?)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="90" x="280" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="normal?&lt;div&gt;(vec3&amp;lt;f32&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="370" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="tangent?&lt;div&gt;(vec4&amp;lt;f32&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="450" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="position&lt;div&gt;(vec3&amp;lt;i32&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="530" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="range&lt;div&gt;(vec2&amp;lt;f32&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="780" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="data&lt;div&gt;(f32)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="860" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="range&lt;div&gt;(vec2&amp;lt;f32&amp;gt;)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="940" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="data&lt;div&gt;(u32)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="80" x="1020" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;glass=0;" value="Feature-Scoped Attributes" vertex="1">
+          <mxGeometry height="60" width="170" x="610" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Name" vertex="1">
+          <mxGeometry height="60" width="170" x="610" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IGcmq00_zU-12ltwo_KF-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="data&lt;div&gt;(string)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="170" x="610" y="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
