@@ -58,6 +58,8 @@ Stores parametric/procedural 2.5D/3D objects as compact attribute descriptions r
 - **Memory layout:** struct packing for vertex buffers (SoA)—compress each column individually,
   then interleave into a single stream (similar to the approach described in the Lance paper).
 
+![Feature Table Layout ](diagrams/feature_table.png)
+
 Example 3D Object Types:
   - Buildings (LOD1)
   - 3D Roads
@@ -65,20 +67,20 @@ Example 3D Object Types:
     - Linear Referencing to combine vertices with attributes to specify lane width
     - No styling information included in the FeatureTable only via style document based on data driven styling
     
-Open Questions
-    - How to encode linear referencing? -> int vs double for ranges
-    - Only one component of uv for FeatureTable and also data type u32 to be compatible with WebGPU (u is distance along line)?
-    - How to map textures to lanes? -> are side stripes and sidewalks only textures (SDFs) or vector data for sharpness
-    - No support for colors? -> only data-driven styling via style document?
-    - Only encode tangent?
-    - Only basically support LOD1 buildings and roads as 3D objects in a FeatureTable?
-    - How to reference textures?
-    - Use AoS vs SoA approach for VertexBuffer? -> Nvidia recommends AoS
-    - Also describe LOD2 buildings (extrusion and roof types) and many bridges parametric? 
-    - Allow to batch extruded cubes to be merged into a single feature?
+Open Questions FeatureTable:
+- How to efficently encode linear referencing for that use case (int vs double for ranges)?
+- Only one component of uv for FeatureTable and also data type u32 to be compatible with WebGPU (u is distance along line)?
+- How to map textures to lanes? -> are side stripes and sidewalks only textures (SDFs) or vector data for sharpness
+- No support for colors? -> only data-driven styling via style document?
+- Only encode tangent?
+- Only basically support LOD1 buildings and roads as 3D objects in a FeatureTable?
+- How to reference textures?
+- Use AoS vs SoA approach for VertexBuffer? -> Nvidia recommends AoS
+- Also describe LOD2 buildings (extrusion and roof types) and many bridges parametric? 
+- Allow to batch extruded cubes to be merged into a single feature?
   
 
-![Feature Table Layout ](diagrams/feature_table.png)
+
 
 #### GPUTables 
 Stores explicit 3D mesh geometry ready for direct GPU consumption, used when parametric representation
@@ -93,12 +95,10 @@ via FeatureTable is not feasible.
 - SceneTable/MeshTable
   - Acts as the 3D counterpart to a FeatureTable—same columnar structure, but instead of inline geometry
 columns it references object instances via ID and attaches a per-instance transform
-
-
-![GPUTables](diagrams/gpu_tables.png)
-
 - TerrainTable
 - MaterialTable
+
+![GPUTables](diagrams/gpu_tables.png)
 
 #### Assets
 
@@ -106,15 +106,7 @@ columns it references object instances via ID and attaches a per-instance transf
 - Instance Container File
 
 
-## Data
-- Overture Maps -> https://docs.overturemaps.org/guides/transportation/segments-and-connectors/
-  - buildings
-  - transportation
-    - Segment Z-order -> https://docs.overturemaps.org/guides/transportation/segments-and-connectors/#level-z-order
-    - Linear referencing -> https://docs.overturemaps.org/guides/transportation/linear-referencing/
-  
-
-## Open Questions
+## General Open Questions
 
 - Which refinement strategy should be used for 3D objects such as buildings (replacement only, or also additive)?
 - Which data types should be used, and which graphics API constraints apply? -> For example, `u16` is not supported in WebGPU
